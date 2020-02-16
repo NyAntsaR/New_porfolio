@@ -17,6 +17,17 @@ body {
 	line-height: 1.5;
 }
 
+.primary {
+	color: #e84118;
+}
+
+p{
+	line-height: 2;
+}
+
+a,a:hover {
+	color: #fff;
+}
 
 h3 {
 	font-size: 36px;
@@ -31,9 +42,6 @@ h1,h2,h3,h4,h5,h6 {
 	color: #333;
 }
 
-.section-padding {
-	padding: 120px 0;
-}
 
 .full-width
 {
@@ -44,7 +52,6 @@ h1,h2,h3,h4,h5,h6 {
 
 header {
 	background-color: #333;
-	position: fixed;
 	z-index: 100;
 	width: 100%;
 }
@@ -118,3 +125,75 @@ li.nav-item:last-child
 button:focus{
 	outline: none;
 }
+
+
+/*** welcome section ***/
+.main {
+	width: 100%;
+	height: 100vh;
+	background:url(img/main.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.main::before{
+	position: absolute;
+	content:'';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main-content {
+	z-index: 1;
+}
+
+.main-content .welcome {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.main-content .type {
+	font-size: 60px;
+	margin-top: 20px;
+}
+
+.main-content .social-icons {
+	margin-top: 20px;
+}
+
+.main-content .social-icons a {
+	padding: 0 10px;
+	color: #fff;
+}
+
+.main-content .social-icons a:hover{
+	padding: 0 10px;
+	color: #fff;
+}
+
+.cta {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 10px 60px;
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 40px;
+}
+
+.cta-portfolio {
+	background-color: #e84118;
+	border: 1px solid #e84118;
+}
+
+.cta-contact {
+	border: 1px solid #fff;
+}
+
