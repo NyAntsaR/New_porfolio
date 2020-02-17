@@ -29,6 +29,20 @@ a,a:hover {
 	color: #fff;
 }
 
+.full-width
+{
+	width: 100%;
+}
+
+.svg-bottom{
+	position: absolute;
+	width: 100%;
+	bottom:0;
+	left: 0;
+	z-index: 2;
+}
+
+/***** Title *****/
 h3 {
 	font-size: 36px;
 }
@@ -40,12 +54,6 @@ h5 {
 h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
 	color: #333;
-}
-
-
-.full-width
-{
-	width: 100%;
 }
 
 /*** header styles ***/
@@ -196,4 +204,5 @@ button:focus{
 .cta-contact {
 	border: 1px solid #fff;
 }
+
 
