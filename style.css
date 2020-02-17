@@ -217,3 +217,8 @@ canvas {
 	left: 0;
 }
 
+.type .mytext {
+	font-weight: bold;
+	color: #e84118
+}
+
