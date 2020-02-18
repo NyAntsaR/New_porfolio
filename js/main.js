@@ -37,5 +37,9 @@ doc.ready(function() {
           })
     });
 
+    $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item'
+    })
+
    
 })

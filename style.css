@@ -223,6 +223,7 @@ button:focus{
 
 .cta-portfolio {
 	border: 1px solid #d39e00;
+	color: #fff;
 }
 
 .cta-portfolio::before {
@@ -357,6 +358,21 @@ canvas {
 }
 
 /** experience and skills style ***/
+.exp-skills .section-header {
+	width: 100%;
+	position: relative;
+}
+
+.exp-skills .section-header::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: -5px;
+	background-color: #d39e00;
+}
+
 .exp-skills{
 	background:url(img/about-bg.jpg);
 	background-repeat: no-repeat;
@@ -386,6 +402,22 @@ canvas {
 .exp-skills h5{
 	margin-top: 30px;
 }
+
+.exp-skills h3{
+	position: relative;
+	display: inline-block;
+}
+
+.exp-skills h3::before{
+	position: absolute;
+	content:'';
+	width: 100%;
+	height: 5px;
+	left: 0;
+	bottom: -15px;
+	background-color: #fff;
+}
+
 
 .exp-skills ul {
 	list-style: none;
@@ -434,4 +466,182 @@ canvas {
 	border-right: 4px solid transparent;
 	border-left:4px solid transparent;
 	border-top: 6px solid #fff;
+}
+
+/**** services style ***/
+.service-desciption ul,li {
+	text-align: justify;
+	padding: 5px;
+}
+
+.services-content {
+	margin-top: 60px;
+}
+
+.service-icon {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	background-color: rgba(2, 96, 120, 0.9);
+	border-radius: 50%;
+}
+
+.service-single .service-name {
+	margin: 30px 0p;
+}
+
+.service-single {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 30px;
+	margin-top: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	height: 500px;
+	transition: all 0.3s ease;
+}
+
+.service-single:hover{
+	background-color: rgba(2, 96, 120);
+}
+
+.service-single:hover h5{
+	color: #fff;
+}
+
+.service-icon .fa {
+	transform:scale(1)rotate(0deg);
+	transition: all 0.3s ease;
+}
+
+.service-single:hover .service-icon{
+	color: #fff;
+	background-color: #d39e00;
+}
+
+.service-desciption p,a {
+	text-decoration: none;
+	color: #d39e00;
+}
+
+.service-single:hover li {
+	color: #fff;
+}
+
+.service-desciption p,a:hover{
+	color: rgba(2, 96, 120);
+}
+
+.service-single:hover .fa{
+	transform:scale(1.2)rotateY(180deg);
+}
+
+
+/**** portfolio ****/
+.portfolio {
+	background-color: #ddd;
+	color: #fff;
+}
+
+.item-content {
+	width: 100%;
+	position: relative;
+	border: 5px solid #fff;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.item-content img {
+	width: 100%;
+	border-radius: 2px;
+	transition: all 0.5s ease;
+	transform:scale(1)rotate(0deg);
+}
+
+.img-overlay{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	left: 5px;
+	bottom: 5px;
+	content:'';
+	overflow: hidden;
+
+}
+
+.img-overlay::before{
+	position: absolute;
+	height: 50%;
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+	content:'';
+	left: -110%;
+	top: 0;
+	transition:all 0.5s ease;
+}
+
+.img-overlay::after{
+	position: absolute;
+	height: 50%;
+	width: 100%;
+	background-color: rgba(2, 96, 120, 0.8);;
+	content:'';
+	right: -110%;
+	bottom: 0;
+	transition:all 0.5s ease;
+}
+
+.portfolio-item .col-md-3 img{
+	height: 200px;
+}
+
+.portfolio-item .col-md-6 img{
+	height: 400px;
+}
+
+.portfolio-item:hover .item-content .img-overlay::before {
+	left: 0;
+}
+
+.portfolio-item:hover .img-overlay::after {
+	right: 0;
+}
+
+.portfolio-item .info .description {
+	color: #d39e00;
+	opacity: 0;
+	top: -20px;
+	position: relative;
+	transition:all 0.5s ease;
+}
+
+.portfolio-item .info .item-icon {
+	color: #fff;
+	opacity: 0;
+	bottom: -20px;
+	position: relative;
+	transition:all 0.5s ease;
+}
+
+.portfolio-item .info {
+	z-index: 2;
+	position: relative;
+	font-weight: bold;
+}
+
+.portfolio-item:hover .info .item-icon{
+	opacity: 1;
+	bottom: 0px;
+}
+
+.portfolio-item:hover .info .description{
+	opacity: 1;
+	top:-1px;
+}
+
+.portfolio-item:hover .item-content img{
+	transform: scale(1.2)rotate(10deg);
+}
+
+.portfolio-item {
+	margin: 5px 0;
 }
