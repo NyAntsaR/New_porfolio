@@ -538,9 +538,34 @@ canvas {
 
 
 /**** portfolio ****/
-.portfolio {
-	background-color: #ddd;
+#title{
 	color: #fff;
+}
+
+.portfolio {
+	background:url(img/portfolio-bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+.portfolio::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.portfolio .section-header {
+	z-index: 2;
+}
+
+.portfolio ul.filter{
+	z-index: 2;
 }
 
 .item-content {
@@ -670,11 +695,101 @@ ul.filter li.filter-active {
 
 .link{
 	display: inline-block;
+	color: #fff;
 }
 
 .description p {
 	font-size: 10px;
 	color: #000;
 	text-align: center;
+}
 
+/**** share style ****/
+.share {
+	background:url('img/share-bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+.share::before {
+	position: absolute;
+	top:0;
+	left:0;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index:0;
+}
+
+.share h3{
+	color: #fff;
+}
+
+.share .section-header{
+	z-index: 100;
+}
+
+.share-img {
+	width: 100px;
+	height: 100px
+}
+
+
+/**** more style ****/
+.more .section-header{
+	margin-bottom: 60px;
+}
+
+.more-image {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform:scale(1);
+	transition:all 0.5s ease;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+
+.more-image img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.more-image .more-title{
+	position: absolute;
+	top:15px;
+	right: 15px;
+	color: #fff;
+	background-color: #026078;
+	padding: 5px 20px;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 20px;
+}
+
+.more-name{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.more-content{
+	margin-top: 20px;
+	padding: 20px; 
+}
+
+.more-details{
+	padding-left:20px;
+}
+
+.more-inner {
+	border: 1px solid #ddd;
+}
+
+.more-content:hover .more-image img{
+	transform:scale(1.2);
 }
