@@ -17,8 +17,12 @@ body {
 	line-height: 1.5;
 }
 
+section{
+	padding: 60px;
+}
+
 .primary {
-	color: #e84118;
+	color: #d39e00;
 }
 
 p{
@@ -67,7 +71,7 @@ h5 {
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
-	color: #333;
+	color: #d39e00;
 }
 
 /*** header styles ***/
@@ -82,7 +86,7 @@ a.navbar-brand
 {
 	font-size: 30px;
 	font-weight: bold;
-	color: #e84118;	
+	color: #d39e00;	
 }
 
 .navbar
@@ -157,7 +161,7 @@ button:focus{
 	background:url(img/main.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: fixed;
+	background-attachment: fixed;
 	color: #fff;
 	text-align: center;
 	position: relative;
@@ -218,7 +222,7 @@ button:focus{
 }
 
 .cta-portfolio {
-	border: 1px solid #e84118;
+	border: 1px solid #d39e00;
 }
 
 .cta-portfolio::before {
@@ -227,7 +231,7 @@ button:focus{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #e84118;
+	background-color: #d39e00;
 	content: '';
 	z-index: -1;
 	transition: all 0.3s ease;
@@ -238,7 +242,7 @@ button:focus{
 
 .cta-portfolio:hover{
 	border-color: #fff;
-	color: #e84118;
+	color: #d39e00;
 }
 
 .cta-portfolio:hover::before{
@@ -256,7 +260,7 @@ button:focus{
 	top: 0;
 	left: -100%;
 	content: '';
-	background-color: #e84118;
+	background-color: #d39e00;
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -270,7 +274,7 @@ button:focus{
 }
 
 .cta-contact:hover{
-	border-color: #e84118;
+	border-color: #d39e00;
 }
 
 canvas {
@@ -292,9 +296,6 @@ canvas {
 
 
 /** about style ***/
-.about {
-	padding: 40px;
-}
 .about img
 {
 	width: 100%;
@@ -317,7 +318,7 @@ canvas {
 
 .about-social-icons a
 {
-	color: #333;
+	color:#026078;
 	margin:0 10px;
 }
 
@@ -327,8 +328,8 @@ canvas {
 	font-size: 15px;
 	font-weight: bold;
 	display: inline-block;
-	color: #333;
-	border: 1px solid #333;
+	color: #d39e00;
+	border: 1px solid #d39e00;
 	margin-top: 40px;
 	position: relative;
 	overflow: hidden;
@@ -342,7 +343,7 @@ canvas {
 	top: 0;
 	left: -100%;
 	content: '';
-	background-color: #333;
+	background-color: #026078;
 	transition:all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -353,5 +354,41 @@ canvas {
 .about-contact:hover::after
 {
 	left: 0;
+}
+
+/** experience and skills style ***/
+.exp-skills{
+	background:url(img/about-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+	position: relative;
+}
+
+.exp-skills::before{
+	position: absolute;
+	content:'';
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	background-color: rgba(2, 96, 120, 0.9);
+}
+
+.exp-skills h3, .exp-skills h5, .exp-skills span  {
+	color: #d39e00;
+}
+
+.exp-skills p, .exp-skills div {
+	color: #fff;
+}
+
+.exp-skills h5{
+	margin-top: 30px;
+}
+
+.exp-skills ul {
+	list-style: none;
 }
 
