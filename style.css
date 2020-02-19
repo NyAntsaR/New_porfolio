@@ -793,3 +793,31 @@ ul.filter li.filter-active {
 .more-content:hover .more-image img{
 	transform:scale(1.2);
 }
+
+/***contact style****/
+.contactSection{
+	background:url("img/contact-bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+}
+
+.contactSection::before{
+	position: absolute;
+	content:'';
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.contact-top{
+	margin: 30px;	
+}
+
+.contactSection h3 {
+	z-index: 1;
+}
