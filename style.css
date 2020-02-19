@@ -497,7 +497,6 @@ canvas {
 	padding: 30px;
 	margin-top: 5px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	height: 500px;
 	transition: all 0.3s ease;
 }
 
@@ -818,6 +817,23 @@ ul.filter li.filter-active {
 	margin: 30px;	
 }
 
+.contact-top a{
+	text-decoration: none;
+	color: #fff;
+}
+
 .contactSection h3 {
 	z-index: 1;
+}
+
+
+/***footer***/
+footer {
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	color: #fff;
+	background-color: #d39e00;
+	text-align:center;
+	font-size: 10px;
 }

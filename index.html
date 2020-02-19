@@ -11,8 +11,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet"> 
 		<!-- Font Awesome -->
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<!-- Carousel -->
-		<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 		<!-- Css animation -->
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<!-- CSS style -->
@@ -35,12 +33,13 @@
 						</button>
 						<div class="collapse navbar-collapse" id="menu">
 							<ul class="navbar-nav ml-auto">
-								<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">More</a></li>
-								<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+								<li class="nav-item active"><a href="#home" class="nav-link">Home</a></li>
+								<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+								<li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+								<li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+								<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+								<li class="nav-item"><a href="#more" class="nav-link">More</a></li>
+								<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -49,7 +48,7 @@
 		</header>
 
 		<!-------WELCOME SECTION-------->
-		<section class="main d-flex justify-content-center">
+		<section id="home" class="main d-flex justify-content-center">
 			<div id="myparticles"></div>
 			<div class="main-content align-self-center">
 				<div class="welcome">
@@ -65,8 +64,8 @@
 					<a href="#"><i class="fa fa-phone"></i> : +1(510)541-9835 </a>
 				</div>
 
-				<a class="cta cta-portfolio" href="#">Portfolio</a>
-				<a class="cta cta-contact" href="mailTo:nyantsa.rajaonarison@gmail.com">Contact</a>
+				<a class="cta cta-portfolio" href="#portfolio">Portfolio</a>
+				<a class="cta cta-contact" href="#contact">Contact</a>
 			</div>
 
 			<!---Make different shape for the background image-->
@@ -104,7 +103,7 @@
 		</section>
 		
 		<!-------EXPERIENCE AND SKILLS SECTION-------->
-		<section class="section-padding exp-skills">
+		<section class="section-padding exp-skills" id="skills">
 
 			<svg viewBox="0 0 1400 100" class="svg-top">
 				<polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill:white";></polygon>
@@ -252,7 +251,7 @@
 		</section>
 
 		<!-------SERVICES SECTION-------->
-		<section class="services section-padding">
+		<section class="services section-padding" id="services">
 			<div class="container">
 				<div class="row">
 					<div class="section-header text-center full-width">
@@ -331,7 +330,7 @@
 
 
 		<!-------PORTFOLIO SECTION-------->
-		<section class="section-padding portfolio">
+		<section class="section-padding portfolio" id="portfolio">
 			<div class="container">
 				<div class="row">
 					<div class="section-header text-center full-width">
@@ -347,8 +346,8 @@
 					</ul>
 				</div>
 
-				<div class="row">
-					<div class="portfolio-container full-width">
+				<div class="portfolio-container">
+					<div class="row">
 						<div class="portfolio-item col-md-3 web">
 							<div class="item-content text-center">
 								<img src="img/portfolio/2.jpeg" alt="portfolio-image" class="img-fluid">
@@ -417,7 +416,7 @@
 		</section>
 
 		<!-------MORE SECTION-------->
-		<section class="section-padding more">
+		<section class="section-padding more" id="more">
 			<div class="container">
 				<div class="row">
 					<div class="section-header full-width text-center">
@@ -484,7 +483,11 @@
 		</section>
 
 		<!-----CONTACT SECTION---->
-		<section class=" contactSection section-padding ">
+		<section class=" contactSection section-padding" id="contact">
+			<svg viewBox="0 0 1400 100" class="svg-top">
+				<polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill:white";></polygon>
+			</svg>
+
 			<div class="container">
 				<div class="section-header full-width text-center">
 					<div class="row">
@@ -502,7 +505,7 @@
 						</div>
 
 						<div class="col-md-4 text-center">
-							<div class="contact-email "><i class="fa fa-envelope"></i> Email </div>
+							<a href="mailTo:nyantsa.rajaonarison@gmail.com"><i class="fa fa-envelope"></i> Email</a>
 							<p class="text-center">nyantsa.rajaonarison@gmail.com</p>
 						</div>
 
@@ -516,6 +519,12 @@
 			</div>
 		</section>
 
+		<footer>
+			<div>
+				Copyright &copy; 2020 <strong>Ny Antsa's Portfolio</strong>.All right reserved
+			</div>
+		</footer>
+
 		<!-- Jquery -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
@@ -527,8 +536,6 @@
 		<script type="text/javascript" src="js/myparticles.js"></script>
 		<!-- Isotope -->
 		<script type="text/javascript" src="js/isotope.js"></script>
-		<!-- Carousel -->
-		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		<!-- Typed script -->
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 		<!-- Javascript -->
